@@ -7,129 +7,93 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #f0f4f8;
         }
-
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        h1, h2, h3 {
-            color: #0078d7;
+        .word_split {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
-
-        ul {
-            list-style: none;
-            padding: 0;
+        .word {
+            font-size: 1.2rem;
+            font-weight: bold;
+            background: #2575fc;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
-
-        ul li {
+        .bubble {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
             margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .contact a {
-            color: #0078d7;
-            text-decoration: none;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
+        .bubble img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Lokesh Dawkare</h1>
-            <p>B.Tech in Artificial Intelligence and Data Science</p>
-        </header>
-
-        <section class="contact section">
-            <h2>Get in Touch</h2>
-            <ul>
-                <li>Mobile: +91-9511869844</li>
-                <li>Email: <a href="mailto:lokeshdawkare2002@gmail.com">lokeshdawkare2002@gmail.com</a></li>
-                <li>Current Location: Osmanabad</li>
-            </ul>
-        </section>
-
-        <section class="skills section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>SQL</li>
-                <li>Data Analysis</li>
-                <li>Excel</li>
-                <li>ELT</li>
-                <li>Statistics</li>
-                <li>Natural Language Processing</li>
-            </ul>
-        </section>
-
-        <section class="certifications section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Python For Data Science, AI & Development</li>
-                <li>Databases And SQL For Data Science With Python</li>
-                <li>Python Project For Data Engineering</li>
-                <li>Intro To Machine Learning From Kaggle</li>
-            </ul>
-        </section>
-
-        <section class="education section">
-            <h2>Education</h2>
-            <h3>Graduation</h3>
-            <p>B.Tech in Artificial Intelligence and Data Science, Dr. Babasaheb Ambedkar Technological University, Lonere</p>
-            
-            <h3>Schooling</h3>
-            <ul>
-                <li>Class XII: Maharashtra Board</li>
-                <li>Class X: CBSE Board</li>
-            </ul>
-        </section>
-
-        <section class="internships section">
-            <h2>Internships</h2>
-            <p><strong>DaveSkillHub | October 2023 - December 2023</strong></p>
-            <ul>
-                <li>Developed and optimized Python scripts to automate data collection and analysis tasks, improving workflow efficiency.</li>
-                <li>Collaborated with a team to build data-driven applications using Python libraries such as Pandas, NumPy, and Matplotlib for real-time data visualization and reporting.</li>
-            </ul>
-        </section>
-
-        <section class="projects section">
-            <h2>Projects</h2>
-            <p><strong>Object Detection | February 2024 - March 2024</strong></p>
-            <ul>
-                <li>Developed an object detection model using Convolutional Neural Networks (CNN) and TensorFlow to accurately identify and localize multiple objects within images.</li>
-            </ul>
-            <p><strong>Handwritten Digit Recognition | November 2023 - December 2024</strong></p>
-            <ul>
-                <li>Developed a machine learning model using Python and Scikit-learn to recognize handwritten digits from the MNIST dataset, achieving over 98% accuracy with a Random Forest classifier, SVM, and CNN.</li>
-            </ul>
-        </section>
-
-        <section class="achievements section">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Organized college Freshers Event in B.Tech/B.E.</li>
-            </ul>
-        </section>
+<div class="container">
+    <div class="word_split wrapper">
+        <span class="word word1">Lokesh</span>
+        <span class="word word2">Dawkare</span>
+        <span class="word word3">Personal</span>
+        <span class="word word4">Details</span>
+        <span class="word word5">Skills</span>
+        <span class="word word6">Certifications</span>
+        <span class="word word7">Education</span>
+        <span class="word word8">Internships</span>
+        <span class="word word9">Projects</span>
+        <span class="word word10">Achievements</span>
+        <span class="word word11">Get In Touch</span>
+        
+        <div class="bubble">
+            <span class="the-arrow"></span>
+            Hi! I am Lokesh.<br/>I specialize in AI, Data Science, and Machine Learning.
+        </div>
+        <div class="bubble">
+            <span class="the-arrow"></span>
+            Nationality: Indian<br/>
+            Location: Osmanabad<br/>
+            Birthday: August 20, 2002<br/>
+            Hobbies: Programming, Research, Trading
+        </div>
+        <div class="bubble">
+            <span class="the-arrow"></span>
+            Skills:<br/>
+            Python, Machine Learning, Deep Learning, SQL, NLP, and more.
+        </div>
+        <div class="bubble">
+            <span class="the-arrow"></span>
+            Certifications:<br/>
+            - Python for Data Science<br/>
+            - SQL for Data Science<br/>
+            - Intro to ML (Kaggle)
+        </div>
+        <div class="bubble">
+            <span class="the-arrow"></span>
+            Education:<br/>
+            B.Tech in AI & DS, Dr. Babasaheb Ambedkar Technological University.
+        </div>
+        <div class="bubble">
+            <span class="the-arrow"></span>
+            Contact:<br/>
+            Phone: +91-9511869844<br/>
+            Email: <a href="mailto:lokeshdawkare2002@gmail.com">lokeshdawkare2002@gmail.com</a>
+        </div>
     </div>
+</div>
 </body>
 </html>
