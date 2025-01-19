@@ -4,96 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lokesh Dawkare | Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
+            background-color: #f4f4f9;
+            color: #333;
         }
         .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .word_split {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .word {
-            font-size: 1.2rem;
-            font-weight: bold;
-            background: #2575fc;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .bubble {
+            max-width: 900px;
+            margin: 20px auto;
             background: #ffffff;
-            padding: 15px;
+            padding: 30px;
             border-radius: 10px;
-            margin: 10px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .bubble img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #0078d7;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #0078d7;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            font-size: 1.5rem;
+            color: #0078d7;
+            border-bottom: 2px solid #0078d7;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        .contact-info, .skills, .projects, .education, .certifications, .achievements {
+            padding: 10px;
+            background: #f9f9ff;
+            border-left: 4px solid #0078d7;
+            border-radius: 5px;
+        }
+        .contact-info ul li {
+            font-size: 1rem;
+        }
+        a {
+            color: #0078d7;
+            text-decoration: none;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="word_split wrapper">
-        <span class="word word1">Lokesh</span>
-        <span class="word word2">Dawkare</span>
-        <span class="word word3">Personal</span>
-        <span class="word word4">Details</span>
-        <span class="word word5">Skills</span>
-        <span class="word word6">Certifications</span>
-        <span class="word word7">Education</span>
-        <span class="word word8">Internships</span>
-        <span class="word word9">Projects</span>
-        <span class="word word10">Achievements</span>
-        <span class="word word11">Get In Touch</span>
-        
-        <div class="bubble">
-            <span class="the-arrow"></span>
-            Hi! I am Lokesh.<br/>I specialize in AI, Data Science, and Machine Learning.
+    <div class="container">
+        <div class="header">
+            <h1>Lokesh Dawkare</h1>
+            <p>B.Tech in Artificial Intelligence and Data Science</p>
         </div>
-        <div class="bubble">
-            <span class="the-arrow"></span>
-            Nationality: Indian<br/>
-            Location: Osmanabad<br/>
-            Birthday: August 20, 2002<br/>
-            Hobbies: Programming, Research, Trading
+
+        <div class="section contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:lokeshdawkare2002@gmail.com">lokeshdawkare2002@gmail.com</a></li>
+                <li><strong>Phone:</strong> +91-9511869844</li>
+                <li><strong>Location:</strong> Osmanabad, Maharashtra</li>
+            </ul>
         </div>
-        <div class="bubble">
-            <span class="the-arrow"></span>
-            Skills:<br/>
-            Python, Machine Learning, Deep Learning, SQL, NLP, and more.
+
+        <div class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python Programming</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>SQL</li>
+                <li>Data Analysis</li>
+                <li>Excel</li>
+                <li>ELT</li>
+                <li>Statistics</li>
+                <li>Natural Language Processing</li>
+            </ul>
         </div>
-        <div class="bubble">
-            <span class="the-arrow"></span>
-            Certifications:<br/>
-            - Python for Data Science<br/>
-            - SQL for Data Science<br/>
-            - Intro to ML (Kaggle)
+
+        <div class="section certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Python For Data Science, AI & Development</li>
+                <li>Databases And SQL For Data Science With Python</li>
+                <li>Python Project For Data Engineering</li>
+                <li>Intro To Machine Learning From Kaggle</li>
+            </ul>
         </div>
-        <div class="bubble">
-            <span class="the-arrow"></span>
-            Education:<br/>
-            B.Tech in AI & DS, Dr. Babasaheb Ambedkar Technological University.
+
+        <div class="section education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Graduation:</strong> B.Tech in Artificial Intelligence and Data Science<br>Dr. Babasaheb Ambedkar Technological University, Lonere</li>
+                <li><strong>Class XII:</strong> Maharashtra Board</li>
+                <li><strong>Class X:</strong> CBSE Board</li>
+            </ul>
         </div>
-        <div class="bubble">
-            <span class="the-arrow"></span>
-            Contact:<br/>
-            Phone: +91-9511869844<br/>
-            Email: <a href="mailto:lokeshdawkare2002@gmail.com">lokeshdawkare2002@gmail.com</a>
+
+        <div class="section projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Object Detection:</strong> Developed an object detection model using CNN and TensorFlow to identify multiple objects in images.</li>
+                <li><strong>Handwritten Digit Recognition:</strong> Built a model to recognize handwritten digits with over 98% accuracy using Random Forest, SVM, and CNN.</li>
+            </ul>
+        </div>
+
+        <div class="section achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Organized College Freshers Event in B.Tech.</li>
+            </ul>
         </div>
     </div>
-</div>
 </body>
 </html>
