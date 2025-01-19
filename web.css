@@ -10,7 +10,7 @@
         font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
-        background: linear-gradient(135deg, #0078d7, #004d99);
+        background: linear-gradient(to right, #0078d7, #00c6ff, #ff758c);
         color: #333;
     }
 
@@ -29,12 +29,15 @@
         padding-bottom: 20px;
         border-bottom: 2px solid #0078d7;
         margin-bottom: 20px;
+        background: linear-gradient(to right, #00c6ff, #0078d7);
+        padding: 30px;
+        color: #fff;
+        border-radius: 10px;
     }
 
     .header h1 {
         font-size: 2.8rem;
         margin: 0;
-        color: #0078d7;
         text-transform: uppercase;
         letter-spacing: 2px;
     }
@@ -42,19 +45,46 @@
     .header p {
         font-size: 1.2rem;
         margin-top: 10px;
-        color: #555;
     }
 
     .section {
         margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info {
+        background: #0078d7;
+    }
+
+    .skills {
+        background: #ff758c;
+    }
+
+    .certifications {
+        background: #00c6ff;
+    }
+
+    .education {
+        background: #ffa07a;
+    }
+
+    .projects {
+        background: #6a5acd;
+    }
+
+    .achievements {
+        background: #32cd32;
     }
 
     .section h2 {
         font-size: 1.8rem;
-        color: #0078d7;
-        border-bottom: 3px solid #0078d7;
-        display: inline-block;
         margin-bottom: 15px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #fff;
+        display: inline-block;
         padding-bottom: 5px;
     }
 
@@ -68,36 +98,21 @@
         margin: 12px 0;
         font-size: 1rem;
         line-height: 1.6;
-        color: #555;
     }
 
-    .contact-info ul li strong,
-    .skills ul li strong,
-    .certifications ul li strong,
-    .education ul li strong,
-    .projects ul li strong {
-        color: #0078d7;
-        font-weight: bold;
-    }
-
-    .contact-info, .skills, .projects, .education, .certifications, .achievements {
-        padding: 20px;
-        background: #f9f9ff;
-        border-left: 6px solid #0078d7;
-        border-radius: 10px;
-        margin-top: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    ul li strong {
+        color: #ffd700;
     }
 
     a {
-        color: #0078d7;
+        color: #ffd700;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: bold;
         transition: color 0.3s ease;
     }
 
     a:hover {
-        color: #004d99;
+        color: #fff;
     }
 
     .skills ul li:before,
@@ -105,7 +120,7 @@
     .projects ul li:before,
     .achievements ul li:before {
         content: "•";
-        color: #0078d7;
+        color: #ffd700;
         font-weight: bold;
         display: inline-block;
         width: 1em;
