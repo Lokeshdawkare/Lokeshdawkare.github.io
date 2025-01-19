@@ -1,131 +1,111 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', Arial, sans-serif;
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8;
-    color: #333;
-    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(to right, #E7E7E7, white, #E7E7E7);
+    font-family: "Open Sans Condensed", Arial, sans-serif;
 }
 
 .container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
-/* Header Styles */
-header {
-    text-align: center;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: #ffffff;
-    padding: 30px 20px;
-    border-radius: 10px 10px 0 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin: 10px 0 0;
-}
-
-/* Section Styles */
-.section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #2575fc;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #6a11cb;
-    display: inline-block;
-}
-
-h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    color: #444;
-}
-
-p, li {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* List Styles */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
+.wrapper {
+    width: 80%;
+    margin: 50px auto;
     position: relative;
-    padding-left: 20px;
 }
 
-ul li::before {
-    content: '\2022';
+.word {
+    display: block;
+    text-align: justify;
+    font-family: "BenchNine";
+    line-height: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.word1, .word2 {color: #9BC5DE;}
+.word3, .word4 {color: #90B3C9;}
+.word5, .word6 {color: #809BB0;}
+.word7 {color: #6B7B8A;}
+.word8, .word9 {color: #8B8091;}
+.word10, .word11 {color: #B68FA2;}
+
+.bubble {
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.5;
+    background-color: #99C5DE;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bubble img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bubble::after {
+    content: '';
     position: absolute;
-    left: 0;
-    color: #2575fc;
-    font-size: 1.5rem;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #99C5DE transparent transparent transparent;
 }
 
-/* Link Styles */
-.contact a {
-    color: #6a11cb;
+.word_split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.bubble:nth-child(2) {
+    background-color: #90B2CB;
+}
+
+.bubble:nth-child(3) {
+    background-color: #809BB0;
+}
+
+.bubble:nth-child(4) {
+    background-color: #6B7B8A;
+}
+
+.bubble:nth-child(5) {
+    background-color: #8B8091;
+}
+
+.bubble:nth-child(6) {
+    background-color: #B68FA2;
+}
+
+.bubble:nth-child(7) {
+    background-color: #D99AB5;
+}
+
+.bubble a {
+    color: #FFD700;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.contact a:hover {
+.bubble a:hover {
     text-decoration: underline;
-    color: #2575fc;
-}
-
-/* Button Styles */
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background: linear-gradient(to right, #2575fc, #6a11cb);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-}
-
-/* Highlight Boxes */
-.skills, .certifications, .achievements {
-    background: #f9fafc;
-    border-left: 5px solid #2575fc;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    color: #777;
-    font-size: 0.9rem;
 }
