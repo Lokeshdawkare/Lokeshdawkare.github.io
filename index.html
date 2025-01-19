@@ -3,48 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokesh Dawkare | Portfolio</title>
+    <title>Lokesh Dawkare | Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
         }
 
-        header {
-            background-color: #0078d7;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin: 5px 0 0;
-        }
-
-        section {
-            padding: 20px;
+        .container {
             max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .about {
-            text-align: center;
-        }
-
-        .skills {
-            background-color: #e7e9ed;
-            border-radius: 8px;
+            margin: 20px auto;
             padding: 20px;
-            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #0078d7;
         }
 
         ul {
@@ -54,18 +34,15 @@
 
         ul li {
             margin: 10px 0;
-            font-size: 1.1rem;
         }
 
-        .contact {
-            text-align: center;
-            margin-top: 20px;
+        .section {
+            margin-bottom: 20px;
         }
 
         .contact a {
             color: #0078d7;
             text-decoration: none;
-            font-weight: bold;
         }
 
         .contact a:hover {
@@ -74,31 +51,85 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Lokesh Dawkare</h1>
-        <p>B.Tech in Artificial Intelligence and Data Science</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Lokesh Dawkare</h1>
+            <p>B.Tech in Artificial Intelligence and Data Science</p>
+        </header>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Hi! I am Lokesh Dawkare, a passionate student pursuing a B.Tech in Artificial Intelligence and Data Science at Terna College of Engineering, Osmanabad. I have a keen interest in machine learning, deep learning, natural language processing, and computer vision. My long-term goal is to conduct research in neurology by simulating neurological processes using AI.</p>
-    </section>
+        <section class="contact section">
+            <h2>Get in Touch</h2>
+            <ul>
+                <li>Mobile: +91-9511869844</li>
+                <li>Email: <a href="mailto:lokeshdawkare2002@gmail.com">lokeshdawkare2002@gmail.com</a></li>
+                <li>Current Location: Osmanabad</li>
+            </ul>
+        </section>
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python Programming</li>
-            <li>Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Natural Language Processing</li>
-            <li>Computer Vision</li>
-            <li>Data Engineering</li>
-        </ul>
-    </section>
+        <section class="skills section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>SQL</li>
+                <li>Data Analysis</li>
+                <li>Excel</li>
+                <li>ELT</li>
+                <li>Statistics</li>
+                <li>Natural Language Processing</li>
+            </ul>
+        </section>
 
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/lokesh-dawkare-174a57192/" target="_blank">LinkedIn</a>.</p>
-    </section>
+        <section class="certifications section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Python For Data Science, AI & Development</li>
+                <li>Databases And SQL For Data Science With Python</li>
+                <li>Python Project For Data Engineering</li>
+                <li>Intro To Machine Learning From Kaggle</li>
+            </ul>
+        </section>
+
+        <section class="education section">
+            <h2>Education</h2>
+            <h3>Graduation</h3>
+            <p>B.Tech in Artificial Intelligence and Data Science, Dr. Babasaheb Ambedkar Technological University, Lonere</p>
+            
+            <h3>Schooling</h3>
+            <ul>
+                <li>Class XII: Maharashtra Board</li>
+                <li>Class X: CBSE Board</li>
+            </ul>
+        </section>
+
+        <section class="internships section">
+            <h2>Internships</h2>
+            <p><strong>DaveSkillHub | October 2023 - December 2023</strong></p>
+            <ul>
+                <li>Developed and optimized Python scripts to automate data collection and analysis tasks, improving workflow efficiency.</li>
+                <li>Collaborated with a team to build data-driven applications using Python libraries such as Pandas, NumPy, and Matplotlib for real-time data visualization and reporting.</li>
+            </ul>
+        </section>
+
+        <section class="projects section">
+            <h2>Projects</h2>
+            <p><strong>Object Detection | February 2024 - March 2024</strong></p>
+            <ul>
+                <li>Developed an object detection model using Convolutional Neural Networks (CNN) and TensorFlow to accurately identify and localize multiple objects within images.</li>
+            </ul>
+            <p><strong>Handwritten Digit Recognition | November 2023 - December 2024</strong></p>
+            <ul>
+                <li>Developed a machine learning model using Python and Scikit-learn to recognize handwritten digits from the MNIST dataset, achieving over 98% accuracy with a Random Forest classifier, SVM, and CNN.</li>
+            </ul>
+        </section>
+
+        <section class="achievements section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Organized college Freshers Event in B.Tech/B.E.</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
