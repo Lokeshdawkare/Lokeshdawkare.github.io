@@ -1,91 +1,112 @@
-/* General Styling */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a font and background color for the body */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
+/* Style for main container */
 .container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Header Section */
-.header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #4caf50;
-}
-
-.header h1 {
-    font-size: 2.8rem;
-    margin: 0;
-    color: #4caf50;
-}
-
-.header p {
-    font-size: 1.2rem;
-    margin: 5px 0;
-    color: #555;
-}
-
-/* Section Styling */
-.section {
-    margin: 20px 0;
-}
-
-.section h2 {
-    font-size: 1.8rem;
-    color: #4caf50;
-    border-bottom: 3px solid #4caf50;
-    display: inline-block;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-    font-size: 1rem;
-    color: #444;
-}
-
-.section .contact-info,
-.section .skills,
-.section .projects,
-.section .education,
-.section .certifications,
-.section .achievements {
-    padding: 15px;
-    background: #f9f9ff;
-    border-left: 6px solid #4caf50;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-/* Links */
-a {
-    color: #4caf50;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
 }
 
-a:hover {
-    color: #2e7d32;
-    text-decoration: underline;
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-/* Hover Effects for Sections */
-.section:hover {
-    background: #e8f5e9;
-    transition: background 0.3s ease;
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Button styles */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Section styles */
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add some spacing between elements */
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* Utility classes for text alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
 }
