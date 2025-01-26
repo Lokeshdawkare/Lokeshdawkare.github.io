@@ -66,6 +66,21 @@
             text-decoration: none;
             font-weight: 600;
         }
+        button {
+            padding: 10px 20px;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -125,6 +140,8 @@
                 <li><strong>Object Detection:</strong> Developed an object detection model using CNN and TensorFlow to identify multiple objects in images.</li>
                 <li><strong>Handwritten Digit Recognition:</strong> Built a model to recognize handwritten digits with over 98% accuracy using Random Forest, SVM, and CNN.</li>
             </ul>
+            <button id="toggleDetails">Show More Details</button>
+            <p id="moreDetails" class="hidden">I am passionate about solving real-world challenges using Artificial Intelligence, focusing on deep learning, computer vision, and natural language processing.</p>
         </div>
 
         <div class="section achievements">
@@ -134,6 +151,23 @@
             </ul>
         </div>
     </div>
-    <link rel="stylesheet" href="web.css">
+
+    <script>
+        // JavaScript to handle button interaction
+        document.getElementById('toggleDetails').addEventListener('click', () => {
+            const details = document.getElementById('moreDetails');
+            const button = document.getElementById('toggleDetails');
+
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+                button.textContent = 'Show Less Details';
+            } else {
+                details.classList.add('hidden');
+                button.textContent = 'Show More Details';
+            }
+        });
+
+        console.log("Portfolio loaded successfully.");
+    </script>
 </body>
 </html>
